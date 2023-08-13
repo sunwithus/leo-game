@@ -1,0 +1,56 @@
+.game {
+    width: 800px;
+    height: 300px;
+    border-bottom: 1px solid black;
+    margin:auto;
+}
+#leo {
+    width: 120px;
+    height: 100px;
+    background-image: url(img/run.png);
+    background-size: 120px 100px;
+    position: relative;
+    top: 208px;
+}
+#monster {
+    width: 100px;
+    height: 85px;
+    background-image: url(img/monster2.png);
+    background-size: 100px 85px;
+    position: relative;
+    top: 118px;
+    left: 730px;
+    animation: monsterMove 2.4s infinite linear;
+    
+}
+@keyframes monsterMove {
+    0% {
+        left: 730px; 
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+.jump {
+    animation: jump 0.8s linear;
+	background-image: url(img/jump.png) !important;
+	
+}
+@keyframes jump {
+    0% {
+        top: 208px; 
+    }
+    30% {
+        top: 145px;
+    }
+    50% {
+        top: 80px;
+    }
+    80% {
+        top: 145px;
+    }
+    100% {
+        top: 208px;
+    }
+}
