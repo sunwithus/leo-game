@@ -2,8 +2,9 @@
     width: 800px;
     height: 300px;
     border-bottom: 1px solid black;
-    margin:auto;
+    margin: auto;
 }
+
 #leo {
     width: 120px;
     height: 100px;
@@ -12,45 +13,74 @@
     position: relative;
     top: 208px;
 }
+
 #monster {
     width: 100px;
     height: 85px;
-    background-image: url(img/monster2.png);
+    /*background-image: url(img/monster.png);*/
     background-size: 100px 85px;
     position: relative;
     top: 118px;
     left: 730px;
-    animation: monsterMove 2.4s infinite linear;
-    
+    animation: monsterMove 2s infinite linear;
+
 }
+
+#counts {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 15px;
+    text-align: center;
+}
+
 @keyframes monsterMove {
     0% {
-        left: 730px; 
+        left: 730px;
     }
+
     100% {
         left: -20px;
     }
 }
 
 .jump {
-    animation: jump 0.8s linear;
-	background-image: url(img/jump.png) !important;
-	
+    animation: jump 0.7s linear;
+    background-image: url(img/jump.png) !important;
 }
+
+.power-attack {
+    background-image: url(img/beat.png) !important;
+}
+
+
 @keyframes jump {
     0% {
-        top: 208px; 
+        top: 208px;
     }
+
     30% {
         top: 145px;
     }
+
     50% {
         top: 80px;
     }
+
     80% {
         top: 145px;
     }
+
     100% {
         top: 208px;
     }
+}
+
+.bullet {
+    width: 10px;
+    height: 5px;
+    background-color: red;
+    position: absolute;
+    top: 270px;
+    left: 100px;
 }
