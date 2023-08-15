@@ -74,14 +74,14 @@ let bullets = []; // Array to store bullets
 function shoot() {
   const bullet = document.createElement('div');
   bullet.classList.add('bullet');
-  game.appendChild(bullet);
+  leo.appendChild(bullet);
   bullets.push(bullet);
 
   let bulletPos = 100;
   let bulletInterval = setInterval(() => {
     bulletPos += 10;
     bullet.style.left = bulletPos + 'px';
-    bullet.style.top = leoTop + 60 + 'px';
+    /*bullet.style.top = leoTop + 'px';*/
 
     if (bulletPos > monsterLeft) {
       clearInterval(bulletInterval);
